@@ -1169,7 +1169,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #619fff;
+  background: #283e5d;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2667,15 +2667,14 @@ body {
     background-size：图片展示大小，这里设置 100%，100% 的意义为：如果背景图片不能全屏，那么是否通过拉伸的方式将背景强制拉伸至全屏显示
 */
 body {
-  background: url("/images/environment1.jpg");
+  background: url("/images/environment2.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
   background-size: 100% 100%;
 }
-.content {
-  padding-top: 15px;
-  opacity: 0.8;
+.content-wrap {
+  opacity: 0.9;
 }
 .sidebar {
   background-color: transparent;
