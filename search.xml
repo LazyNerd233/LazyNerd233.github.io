@@ -9,7 +9,7 @@
 <hr>
 <a id="more"></a>
 
-<h3 id="chapter-2"><a href="#chapter-2" class="headerlink" title="chapter 2"></a>chapter 2</h3><p>God say Good bye world</p>
+<h3 id="chapter-2"><a href="#chapter-2" class="headerlink" title="chapter 2"></a>chapter 2</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">&quot;postName&quot;</span>      <span class="comment"># 新建文章</span></span><br><span class="line">hexo new page <span class="string">&quot;pageName&quot;</span> <span class="comment"># 新建页面</span></span><br><span class="line">hexo g                   <span class="comment"># 生成静态页面至public目录 generate </span></span><br><span class="line">hexo s                   <span class="comment"># 开启预览访问端口（默认端口4000，&#x27;ctrl + c&#x27;关闭server）server</span></span><br><span class="line">hexo d                   <span class="comment"># 部署到GitHub deploy</span></span><br><span class="line">hexo h                   <span class="comment"># 查看帮助 help</span></span><br><span class="line">hexo v                   <span class="comment"># 查看Hexo的版本 version</span></span><br><span class="line">hexo clean               <span class="comment"># 清除缓存文件db.json和已生成的静态文件public</span></span><br><span class="line">hexo clean &amp;&amp; hexo g     <span class="comment"># 常用hexo更新命令</span></span><br></pre></td></tr></table></figure>
 <hr>
 ]]></content>
       <categories>
