@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Cryptography</title>
+    <url>/2021/08/26/Cryptography/</url>
+    <content><![CDATA[<h3 id="CaesarCipher"><a href="#CaesarCipher" class="headerlink" title="CaesarCipher"></a>CaesarCipher</h3><p>simply showing the CaesarCipher</p>
+<a id="more"></a>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> StringBuffer <span class="title">encrypt</span><span class="params">(String text, <span class="keyword">int</span> s)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    StringBuffer result= <span class="keyword">new</span> StringBuffer();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;text.length(); i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">char</span> ch = (<span class="keyword">char</span>)(((<span class="keyword">int</span>)text.charAt(i) + s - <span class="number">65</span>) % <span class="number">26</span> + <span class="number">65</span>);</span><br><span class="line">        result.append(ch);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    String text = <span class="string">&quot;QNUUXFXAUM&quot;</span>;            </span><br><span class="line">    <span class="keyword">int</span> shiftByte = <span class="number">1</span>;</span><br><span class="line">    System.out.println(<span class="string">&quot;Original Text : &quot;</span> + text);</span><br><span class="line">    <span class="keyword">while</span> (shiftByte &lt;= <span class="number">26</span>) </span><br><span class="line">    &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Shift : &quot;</span> + shiftByte);</span><br><span class="line">        System.out.println(<span class="string">&quot;Cipher: &quot;</span> + encrypt(text, shiftByte));</span><br><span class="line">        shiftByte++;</span><br><span class="line">    &#125;       </span><br><span class="line">&#125;  </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>The out put should be </p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Original Text : QNUUXFXAUM</span><br><span class="line">Shift : 1</span><br><span class="line">Cipher: ROVVYGYBVN</span><br><span class="line">Shift : 2</span><br><span class="line">Cipher: SPWWZHZCWO</span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line">Shift : 17</span><br><span class="line">Cipher: HELLOWORLD</span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line">Shift : 26</span><br><span class="line">Cipher: QNUUXFXAUM</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Cryptography</category>
+      </categories>
+      <tags>
+        <tag>Cryptography</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2021/08/01/Hello-World-0/</url>
     <content><![CDATA[<h3 id="Hello-world"><a href="#Hello-world" class="headerlink" title="Hello world"></a>Hello world</h3><p>God say </p>
@@ -18,21 +33,6 @@
       </categories>
       <tags>
         <tag>Hello World</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Cryptography</title>
-    <url>/2021/08/26/Cryptography/</url>
-    <content><![CDATA[<h3 id="CaesarCipher"><a href="#CaesarCipher" class="headerlink" title="CaesarCipher"></a>CaesarCipher</h3><p>simply showing the CaesarCipher</p>
-<a id="more"></a>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> StringBuffer <span class="title">encrypt</span><span class="params">(String text, <span class="keyword">int</span> s)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    StringBuffer result= <span class="keyword">new</span> StringBuffer();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;text.length(); i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">char</span> ch = (<span class="keyword">char</span>)(((<span class="keyword">int</span>)text.charAt(i) + s - <span class="number">65</span>) % <span class="number">26</span> + <span class="number">65</span>);</span><br><span class="line">        result.append(ch);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    String text = <span class="string">&quot;QNUUXFXAUM&quot;</span>;            </span><br><span class="line">    <span class="keyword">int</span> shiftByte = <span class="number">1</span>;</span><br><span class="line">    System.out.println(<span class="string">&quot;Original Text : &quot;</span> + text);</span><br><span class="line">    <span class="keyword">while</span> (shiftByte &lt;= <span class="number">26</span>) </span><br><span class="line">    &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;Shift : &quot;</span> + shiftByte);</span><br><span class="line">        System.out.println(<span class="string">&quot;Cipher: &quot;</span> + encrypt(text, shiftByte));</span><br><span class="line">        shiftByte++;</span><br><span class="line">    &#125;       </span><br><span class="line">&#125;  </span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>The out put should be </p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Original Text : QNUUXFXAUM</span><br><span class="line">Shift : 1</span><br><span class="line">Cipher: ROVVYGYBVN</span><br><span class="line">Shift : 2</span><br><span class="line">Cipher: SPWWZHZCWO</span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line">Shift : 17</span><br><span class="line">Cipher: HELLOWORLD</span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line">Shift : 26</span><br><span class="line">Cipher: QNUUXFXAUM</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Cryptography</category>
-      </categories>
-      <tags>
-        <tag>Cryptography</tag>
       </tags>
   </entry>
   <entry>
